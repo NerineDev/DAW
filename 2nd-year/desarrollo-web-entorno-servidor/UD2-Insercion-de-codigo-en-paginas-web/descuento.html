@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./IMG/pngfind.com-gamer-png-1278648.png">
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="menu_principal">
+                    <li><a href="./index.html">Página Principal</a></li>
+                    <li><a href="./sobre.html">Sobre Nosotros</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./formulario.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="descuento.php" method="get" style="max-width:400px; margin: 30px auto;" class="formulario_descuento">
+            <H1>Calculadora de descuentos:</H1>
+            <label for="precio_original">Precio original (€)</label>
+            <input type="number" id="precio_original" name="precio" step="0.01" required>
+            <br><br>
+            <label for="descuento">Descuento (%)</label>
+            <input type="number" id="descuento" name="descuento" required>
+            <br><br>
+            
+            <!-- Mostrar resultado -->
+            <div id="resultado_descuento"></div>
+            <br><br>
+
+            <!--Botón Calcular resultado-->
+            <input type="submit" value="Calcular">
+
+            <!-- Botón limpiar (oculto al principio por CSS) -->
+            <button type="button" id="Limpiar">Limpiar</button>
+        </form>
+    </main>
+        <footer>
+        <div class="datos_contacto">
+            <h3>Contacto</h3>
+            <p><b>Dirección:</b> Calle falsa 123, 18028, Madrid<br>
+            <b>Teléfono:</b> +34 685-854-875<br>
+            <b>E-mail:</b> bestteam@thebest.com</p>
+        </div>
+        <div class="menu_secundario">
+            <nav>
+                <h3>Otros enlaces de interés</h3>
+                <ul class="bottommenu">
+                    <li>Enlace falso 1</li>
+                    <li>Enlace falso 2</li>
+                    <li>Enlace falso 3</li>                  
+                </ul>
+            </nav>
+        </div>
+        <div class="redes_sociales">
+            <a href="https://facebook.com" target="_blank"><img src="./IMG/facebook.png" class="facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="./IMG/instagram.png" class="instagram"></a>
+            <a href="https://x.com"target="_blank"><img src="./IMG/x.png" class="x"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

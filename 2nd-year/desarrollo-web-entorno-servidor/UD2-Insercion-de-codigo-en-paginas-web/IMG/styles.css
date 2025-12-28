@@ -1,0 +1,724 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-bottom: 88px;
+    
+
+}
+
+
+/* ESTILO HEADER */
+header{
+    background-color: rgb(193, 250, 231);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo{
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo img{
+    height: auto;
+    width: 48%;
+    display:inline-block;
+    margin: 0 auto;    
+}
+.menu_principal{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color:rgb(9, 107, 107);
+    gap: 10px;
+}
+
+.menu_principal li{
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.menu_principal li a {
+    text-decoration: none; 
+    color: #ffffff; 
+    background-color: rgb(9, 107, 107);
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    display: block; 
+    transition: all 0.3s ease; 
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.menu_principal li a:hover {
+    background-color: #ffffff; 
+    color: rgb(9, 107, 107);
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.menu{
+    width: 76%;
+    height: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* FINAL ESTILO HEADER */
+
+/* ESTILO MAIN */
+main{
+    margin-top: 120px;
+    margin-bottom: 0;
+    min-height: calc(100vh - 200px);
+    width: 100%;
+    position:relative;
+    overflow-y: visible;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+
+main::before {
+    content: "";
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 88px;
+    background-color: rgb(225, 245, 238);
+    z-index: -1; 
+    pointer-events: none;
+}
+/* FINAL ESTILO MAIN */
+
+/* ESTILO FOOTER */
+footer {
+    background-color: rgb(193, 250, 231);
+    height: auto; 
+    display: flex;
+    min-height: 80px;
+    justify-content: space-between; 
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.datos_contacto,
+.menu_secundario,
+.redes_sociales {
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 10px; 
+}
+
+
+.redes_sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+}
+
+.redes_sociales img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.redes_sociales img:hover {
+    transform: scale(1.1);
+}
+
+.facebook { width: 45px; }
+.instagram { width: 40px; }
+.x { width: 38px; }
+
+.datos_contacto h3,
+.menu_secundario h3 {
+    margin-bottom: 0;
+    color: rgb(9, 107, 107);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.datos_contacto p,
+.menu_secundario ul.bottommenu li {
+    color: rgb(46, 161, 161);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu_secundario ul.bottommenu {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    color: rgb(9, 107, 107);
+}
+
+.menu_secundario ul.bottommenu li {
+    display: inline-block; 
+}
+/* FINAL ESTILO FOOTER */
+
+/* ESTILO PAGINA HOME PRUEBA */
+.services, .about-page, .formulario_descuento, .home {
+    background-color: transparent;
+}
+.home {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+.home .izquierda{
+    width: 40%;
+    box-sizing: border-box; 
+    padding: 0;             
+    margin: 0;
+    height: 100%; 
+    display: flex;       
+    justify-content: center; 
+    align-items: center; 
+}
+
+.botondemo:hover {
+  background-color: #139b8f;      
+  transform: translateY(-2px);
+}
+
+.botondemo:active {
+  transform: translateY(0);
+}
+
+.home .izquierda img{
+    max-width: 100%;   
+    max-height: 100%; 
+    border-radius: 10px;       
+    display: block;      
+    margin: 0 auto;
+
+}
+.home .izquierda figure {
+  margin: 0;              
+}
+.home .derecha{
+    width: 60%;
+    height:100%;
+    box-sizing: border-box;
+    padding: 50px; 
+    position: relative;
+    z-index: 2;
+    
+}
+.home .derecha .test, p, button{
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 161, 161);
+}
+.home .derecha article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home .derecha #buscar {
+  background-color: #106b64;      
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  align-self: center;
+}
+
+.home .derecha h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 107, 107);
+    margin-top: 100px;
+}
+.home .derecha #search {
+    align-items: center;
+}
+.home .derecha h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 107, 107);
+
+}
+.home .derecha p{
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 161, 161)
+}
+/* FINAL ESTILO PAGINA HOME PRUEBA */
+
+/* ESTILO PAGINA FORMULARIO DESCUENTO PRUEBA */
+.formulario_descuento {
+    max-width: 500px;          
+    margin: 50px auto;          
+    padding: 20px;              
+    border: 2px solid rgb(9, 107, 107);  
+    border-radius: 10px;        
+    background-color: rgb(217, 243, 240);    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.formulario_descuento h1 {
+    color: rgb(9, 107, 107);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario_descuento label {
+    display: block;
+    margin-top: 10px;
+    color: rgb(46, 161, 161);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.formulario_descuento input[type="number"],
+.formulario_descuento input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: rgb(9, 107, 107);
+    text-align: center;
+}
+
+.formulario_descuento input[type="submit"] {
+    display: block;       
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(9, 107, 107);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formulario_descuento input[type="submit"]:hover {
+    background-color: #ff6b6b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#resultado_descuento {
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(9, 107, 107);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FINAL ESTILO PAGINA FORMULARIO DESCUENTO PRUEBA */
+
+/* ESTILO PAGINA ABOUT US PRUEBA */
+.about-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 108px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+.about-page .top {
+    width: 100%;
+    background: rgb(217, 243, 240);
+    border: 2px solid rgb(9, 107, 107);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+.about-page .top h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 107, 107);
+    margin-top: 0;
+}
+
+.about-page .top p {
+    text-align: justify;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 161, 161);
+    padding: 0 20px;
+}
+
+.about-page .mid {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+.about-page .mid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-page .bottom {
+    width: 100%;
+    background: rgb(217, 243, 240);
+    border: 2px solid rgb(9, 107, 107);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.about-page .top h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 107, 107);
+    margin-top: 0;
+}
+.about-page .top p{
+    text-align: justify;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 161, 161);
+    margin: 0 50px 0 50px;
+
+}
+
+.about-page .bottom h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 107, 107);
+    margin-top: 0;
+}
+.about-page .bottom ul{
+    text-align: justify;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 161, 161);
+    margin: 0 50px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-page .bottom ul li{
+    margin-bottom: 10px;
+    display: inline-block;
+    width: calc(20% - 10px);
+    text-align: justify;
+}
+
+.about-page .bottom ul li b {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* FINAL ESTILO PAGINA ABOUT US PRUEBA */
+
+/* ESTILO PAGINA SERVICIOS PRUEBA */
+.services {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 188px);
+}
+
+.services .serviceleft {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .serviceleft img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.services .serviceright {
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    background: rgb(217, 243, 240);
+    border: 2px solid rgb(9, 107, 107);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    min-width: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: column ;
+}
+.services .serviceright h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 107, 107);
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+.services .serviceright p {
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 161, 161);
+}
+.services .serviceright ul {
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.services .serviceright ul li {
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: large;
+    display: inline-block;  
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 161, 161);
+}
+.services .serviceright ul li b {
+    display: block;
+    text-align: center;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.services .serviceright p {
+    margin: 0;
+    text-align: justify;
+    line-height: 1.4;
+}
+.services aside {
+    width: 25%;
+    box-sizing: border-box;
+    border: 2px solid rgb(9, 107, 107);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    background-color: rgb(217, 243, 240);
+    border-radius: 10px;
+    margin: 0;
+    float: none;
+}
+.services aside section h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 107, 107);
+    margin-top: 0;
+}
+.services aside section p {
+    text-align: justify;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 161, 161);
+}
+/* FINAL ESTILO PAGINA SERVICIOS PRUEBA */
+
+/* BOTON MARCO POLO */
+aside.demo {
+  background: linear-gradient(145deg, #c8fff0, #b0f5df);
+  border: 2px solid #0b6b5f;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  float: right;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+aside.demo h2 {
+  font-size: 1.2rem;
+  color: #094e45;
+  margin-top: 0;
+}
+
+aside.demo p {
+  color: #0b5c52;
+  margin-bottom: 15px;
+}
+
+.botondemo {
+  background-color: #106b64;      
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.botondemo:hover {
+  background-color: #139b8f;      
+  transform: translateY(-2px);
+}
+
+.botondemo:active {
+  transform: translateY(0);
+}
+
+#demooutput {
+  margin-top: 15px;
+  color: #064a43;
+  font-style: italic;
+  font-weight: bold;
+  min-height: 0;
+  text-shadow: 0 0 4px #91ffe0;
+}
+
+#demooutput:empty {
+  display: none;
+}
+/* FIN BOTON MARCO POLO */
+
+/* ESTILO RESULTADOS BUSCADOR */
+.resultados {
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.resultados h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  color: #0f6d66;
+}
+
+#listado {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto;
+  display: grid;
+  gap: 12px;
+  max-width: 600px;
+  text-align: center;
+}
+
+#listado li {
+  background-color: #cdfcf9;
+  color: #064a43;
+  border: 2px solid #0f6d66;
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 6px 16px #09504b;
+  transition: transform .12s ease, box-shadow .12s ease;
+  
+}
+
+#listado li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px #09504b;
+}
+
+#listado .title {
+  font-weight: 700;
+  color: #0f6d66;
+}
+
+#listado .cat {
+  margin-left: 8px;
+  background: #e1f5ee;
+  color: #0f6d66;
+  border: 1px solid rgba(16, 107, 100, .18);
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: .9rem;
+}
+
+#listado .price {
+  margin-left: auto;
+  font-weight: 800;
+  color: #0a5a54;
+}
+
+#estado {
+  text-align: center;
+  color: #0f6d66;
+  opacity: .85;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+#listado li { animation: fadeUp .18s ease both; }
+/* FIN ESTILO RESULTADOS BUSCADOR */
+

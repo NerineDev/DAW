@@ -1,0 +1,262 @@
+/* ===== ESTILO BÁSICO ===== */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-bottom: 88px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: rgb(193, 250, 231);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo img {
+    height: auto;
+    width: 48%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 76%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu_principal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(9, 107, 107);
+    gap: 10px;
+}
+
+.menu_principal li {
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.menu_principal li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(9, 107, 107);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.menu_principal li a:hover {
+    background-color: #ffffff;
+    color: rgb(9, 107, 107);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== MAIN + FONDO ===== */
+main {
+    margin-top: 120px;
+    min-height: calc(100vh - 200px);
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+main::before {
+    content: "";
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 88px;
+    background-color: rgb(225, 245, 238);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: rgb(193, 250, 231);
+    height: auto;
+    display: flex;
+    min-height: 80px;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.datos_contacto,
+.menu_secundario,
+.redes_sociales {
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.redes_sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.redes_sociales img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.redes_sociales img:hover {
+    transform: scale(1.1);
+}
+
+.datos_contacto h3,
+.menu_secundario h3 {
+    margin-bottom: 0;
+    color: rgb(9, 107, 107);
+}
+
+.datos_contacto p,
+.menu_secundario ul.bottommenu li {
+    color: rgb(46, 161, 161);
+}
+
+.menu_secundario ul.bottommenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: small;
+    color: rgb(9, 107, 107);
+}
+
+.menu_secundario ul.bottommenu li {
+    display: inline-block;
+}
+
+/* ===== FORMULARIO DESCUENTO ===== */
+.formulario_descuento {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid rgb(9, 107, 107);
+    border-radius: 10px;
+    background-color: rgb(217, 243, 240);
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario_descuento h1 {
+    color: rgb(9, 107, 107);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario_descuento label {
+    display: block;
+    margin-top: 10px;
+    color: rgb(46, 161, 161);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.formulario_descuento input[type="number"],
+.formulario_descuento input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: rgb(9, 107, 107);
+    text-align: center;
+}
+
+.formulario_descuento input[type="submit"] {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(9, 107, 107);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formulario_descuento input[type="submit"]:hover {
+    background-color: #ff6b6b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Resultado dentro del formulario */
+#resultado_descuento {
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(9, 107, 107);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón Limpiar: estilo + oculto por defecto */
+#Limpiar {
+    display: none;              /* oculto al inicio */
+    margin: 10px auto 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(9, 107, 107);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Limpiar:hover {
+    background-color: #ff6b6b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
