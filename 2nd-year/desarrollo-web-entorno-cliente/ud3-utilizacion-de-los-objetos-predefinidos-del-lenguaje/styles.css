@@ -1,0 +1,170 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    color: #7C6F57; 
+}
+
+/* Estilo del encabezado */
+header {
+    background: #fff;
+    color: #7C6F57;
+    padding: 2em 0 1.5em 0;
+    text-align: center;
+    border-bottom: 1px solid #EAEAEA;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+/*Fin estilo del encabezado */
+
+/* estilo del logo */
+.logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+/*Fin estilo del logo */
+
+/* Estilo del contenido principal */
+main {
+    max-width: 600px;
+    margin: 3em auto;
+    background: #fff;
+    padding: 2.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border: 1px solid #EAEAEA;
+}
+/* Fin del estilo del contenido principal */
+
+/* ===== ESTRUCTURA DEL FORMULARIO ===== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* Fila de una sola columna */
+.fila1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+}
+
+/* Fila de dos columnas */
+.fila2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.fila2 > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos de etiquetas e inputs */
+/* Restore TFG-style inputs (NOT the button) */
+input, select {
+    padding: 0.75em 1.2em;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    background: #fff;
+    color: #6B6B6B;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #CBBBA0;
+    box-shadow: 0 2px 8px rgba(203,187,160,0.12);
+}
+label {
+    color: #A89F8C;
+}
+
+
+
+/* Campo contraseña con ojo */
+.campo-pass {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* Alinear el icono del ojo */
+.ojo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Botón centrado y alineado */
+button[type="submit"] {
+    display: block;
+    margin: 2em auto 0 auto;
+    min-width: 260px;
+    padding: 0.9em 2.5em;
+    background: #CBBBA0;
+    color: #7C6F57;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background: #B3A489;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/*Errores de validación */
+.error {
+    color: #c0392b;
+    margin-top: 0.25em;
+    font-size: 0.85em;
+}
+
+.error-input {
+    border: 2px solid #c0392b;
+    background-color: #fff5f5;
+}
+
+
+
+/* Fin de estilos del formulario */
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background: #EAEAEA;
+    color: #6B6B6B;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1rem;
+}
+/* Fin del estilo del pie de página */
+
+/* Ajustes responsive */
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+    }
+    .card, .modal {
+        padding: 1em;
+    }
+    .logo {
+        width: 80px;
+    }
+    .fila2 {
+        grid-template-columns: 1fr;
+    }
+}
