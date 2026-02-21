@@ -14,7 +14,7 @@ It covers responsive layouts, color theory, typography, UX/UI best practices, an
 | **UD1** | Principles of design, color and composition | ✅ |
 | **UD2** | HTML structure and semantic markup | ✅ |
 | **UD3** | CSS3 and responsive design (Flexbox / Grid) | ✅ |
-| **UD4** | Accessibility (WAI-ARIA) and usability | 🚧 In progress |
+| **UD4** | Accessibility (WAI-ARIA) and usability | ✅ |
 | **UD5** | Prototyping and UI tools (Figma / Adobe XD) | 🚧 In progress |
 | **UD6** | Design systems and front-end integration | 🚧 Planned |
 | **UD7** | Final project: responsive multi-page website | 🚧 Planned |
