@@ -13,8 +13,8 @@ It introduces technologies like **PHP**, **Node.js**, and **SQL**, and explores 
 |:--|:--|:--|
 | **UD1** | Introduction to server-side programming | ✅ |
 | **UD2** | PHP basics: syntax, forms, and superglobals | ✅ |
-| **UD3** | File handling and sessions | 🚧 In progress |
-| **UD4** | Databases and CRUD operations (MySQL / PDO) | 🚧 In progress |
+| **UD3** | File handling and sessions | ✅ |
+| **UD4** | Databases and CRUD operations (MySQL / PDO) | ✅ |
 | **UD5** | Authentication and security | 🚧 In progress |
 | **UD6** | APIs and backend frameworks (Node.js / Express intro) | 🚧 Planned |
 | **UD7** | Final project: full server-side web app | 🚧 Planned |
