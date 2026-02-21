@@ -13,9 +13,9 @@ It combines theoretical foundations (cryptography, digital signatures, hashing) 
 |:--|:--|:--|
 | **UD1** | Fundamentals of web security and vulnerabilities (OWASP) | ✅ |
 | **UD2** | Cryptography basics: hashing, encryption, digital signatures | ✅ |
-| **UD3** | Authentication, sessions, and secure data handling | 🚧 In progress |
-| **UD4** | Introduction to blockchain and smart contracts | 🚧 In progress |
-| **UD5** | Decentralized applications and Web3 | 🚧 Planned |
+| **UD3** | Authentication, sessions, and secure data handling | ✅ |
+| **UD4** | Introduction to blockchain and smart contracts | ✅ |
+| **UD5** | Decentralized applications and Web3 | ✅ |
 | **UD6** | Secure API design and deployment best practices | 🚧 Planned |
 
 ---
