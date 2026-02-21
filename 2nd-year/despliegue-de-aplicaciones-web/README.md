@@ -11,8 +11,8 @@ It covers local and cloud hosting, domain setup, server configuration, version c
 | Unit | Topic / Tema | Status |
 |:--|:--|:--|
 | **UD1** | Installing and configuring a web server (Apache / Nginx) | ✅ |
-| **UD2** | Domain names, DNS, and hosting services | 🚧 In progress |
-| **UD3** | Deploying dynamic web applications (PHP, Node.js) | 🚧 In progress |
+| **UD2** | Domain names, DNS, and hosting services | ✅ |
+| **UD3** | Deploying dynamic web applications (PHP, Node.js) | ✅ |
 | **UD4** | Version control and collaborative deployment (Git / GitHub) | 🚧 In progress |
 | **UD5** | Backup, automation, and security practices | 🚧 In progress |
 
