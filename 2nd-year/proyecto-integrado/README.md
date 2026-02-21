@@ -14,7 +14,7 @@ Students design, develop, and document a complete **full-stack web application**
 | **Phase 1** | Project proposal and planning | ✅ |
 | **Phase 2** | Technical documentation (functional & technical design) | ✅ |
 | **Phase 3** | Database structure and initial backend setup | 🚧 In progress |
-| **Phase 4** | Frontend development and integration | 🚧 In progress |
+| **Phase 4** | Frontend development and integration | ✅ |
 | **Phase 5** | Deployment, testing, and optimization | 🚧 Planned |
 | **Phase 6** | Presentation and final defense | 🚧 Planned |
 
