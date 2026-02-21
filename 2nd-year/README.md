@@ -14,8 +14,8 @@ Each subject has its own folder with documentation, code, and a bilingual README
 | **Client-Side Web Development** | [desarrollo-web-entorno-cliente](./desarrollo-web-entorno-cliente/) | ✅ |
 | **Server-Side Web Development** | [desarrollo-web-entorno-servidor](./desarrollo-web-entorno-servidor/) | ✅ |
 | **Web Interface Design** | [diseno-interfaces-web](./diseno-interfaces-web/) | ✅ |
-| **Web Applications Project (TFG / Integrated Project)** | [proyecto-integrado](./proyecto-integrado/) | 🚧 In progress |
-| **Blockchain & Security (Extra Module)** | [blockchain-seguridad](./blockchain-seguridad/) | 🚧 Optional |
+| **Web Applications Project (TFG / Integrated Project)** | [proyecto-integrado](./proyecto-integrado/) | ✅ |
+| **Blockchain & Security (Extra Module)** | [blockchain-seguridad](./blockchain-seguridad/) | ✅ |
 
 ---
 
