@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UD4 - Multimedia e Interactividad</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="page">
+    <h1>Demo — Multimedia en Educación Online</h1>
+
+    <article>
+      <h2>Vídeo educativo</h2>
+
+      <video id="videoCurso" controls preload="metadata" width="100%">
+        <source src="media/video.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta <code>video</code>.
+      </video>
+
+      <p class="hint" id="estadoVideo" aria-live="polite">
+        Reproduce el vídeo. Al finalizar, aparecerá un cuestionario.
+      </p>
+
+      <div class="tabla">
+        <h2>Capítulos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Sección</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody id="tablaCapitulos">
+            <tr>
+              <td>Inicio</td>
+              <td><button type="button" data-time="0">Ir</button></td>
+            </tr>
+            <tr>
+              <td>Punto clave</td>
+              <td><button type="button" data-time="3">Ir</button></td>
+            </tr>
+            <tr>
+              <td>Cierre</td>
+              <td><button type="button" data-time="6">Ir</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="quiz" class="oculto">
+        <h2>Cuestionario (al finalizar el vídeo)</h2>
+
+    <form id="quizForm" class="quiz-form">
+
+      <div class="quiz-grid">
+        <div class="quiz-q" data-q="q1">
+          <p><strong>1.</strong> ¿Qué etiqueta HTML5 se usa para insertar audio?</p>
+          <select name="q1" required>
+            <option value="" selected disabled>Elige una opción</option>
+            <option value="a">&lt;sound&gt;</option>
+            <option value="b">&lt;audio&gt;</option>
+            <option value="c">&lt;music&gt;</option>
+          </select>
+          <p class="quiz-mark oculto"></p>
+        </div>
+
+        <div class="quiz-q" data-q="q2">
+          <p><strong>2.</strong> ¿Qué formato de vídeo ofrece mayor compatibilidad entre navegadores?</p>
+          <select name="q2" required>
+            <option value="" selected disabled>Elige una opción</option>
+            <option value="a">AVI</option>
+            <option value="b">MP4 (H.264)</option>
+            <option value="c">MOV exclusivo</option>
+          </select>
+          <p class="quiz-mark oculto"></p>
+        </div>
+
+        <div class="quiz-q" data-q="q3">
+        <p><strong>3.</strong> ¿Qué evento de JavaScript se usa para detectar que el vídeo ha terminado?</p>
+          <select name="q3" required>
+            <option value="" selected disabled>Elige una opción</option>
+            <option value="a">finish</option>
+            <option value="b">complete</option>
+            <option value="c">ended</option>
+          </select>
+          <p class="quiz-mark oculto"></p>
+        </div>
+      </div>
+
+      <div class="quiz-actions">
+        <button type="submit" id="btnComprobar">Comprobar</button>
+      </div>
+    </form>
+
+        <p class="hint oculto" id="quizFeedback" aria-live="polite"></p>
+      </div>
+
+      <hr />
+      <p>
+        En este ejemplo se integra vídeo con HTML5, se añaden “capítulos” (saltos por tiempo) y se muestra un cuestionario al terminar la reproducción.
+      </p>
+    </article>
+
+    <article>
+      <h2>Audio de conferencia</h2>
+
+      <audio id="audioConferencia" controls preload="metadata">
+        <source src="media/audio.mp3" type="audio/mpeg" />
+        Tu navegador no soporta la etiqueta <code>audio</code>.
+      </audio>
+
+      <p id="audioCaption" class="hint oculto" aria-live="polite"></p>
+      <p>
+        Este recurso de audio se integra mediante la etiqueta HTML5 <code>&lt;audio&gt;</code>, permitiendo la reproducción nativa sin necesidad de complementos externos.
+      </p>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
