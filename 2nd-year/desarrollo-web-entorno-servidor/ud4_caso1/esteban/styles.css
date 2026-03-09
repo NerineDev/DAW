@@ -1,0 +1,6 @@
+body { font-family: sans-serif; margin: 2em; }
+body.light { background: #fff; color: #222; }
+body.dark { background: #222; color: #fff; }
+ul { list-style: none; padding: 0; }
+li { margin-bottom: 0.5em; }
+select, button { margin-left: 0.5em; }

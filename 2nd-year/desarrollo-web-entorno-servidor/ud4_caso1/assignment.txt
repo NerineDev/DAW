@@ -1,0 +1,58 @@
+CASO PRÁCTICO 1
+
+MANTENIMIENTO DEL ESTADO Y ALMACENAMIENTO DE INFORMACIÓN EN APLICACIONES WEB
+
+Contexto
+
+Eres desarrollador web, durante más de 10 años, en una empresa especializada en e-commerce. La empresa ha lanzado una nueva plataforma de compra online y te han asignado la tarea de implementar funcionalidades que permitan a los clientes agregar productos a un carrito de compras mientras navegan por diferentes páginas, además de poder mantener sus preferencias de idioma y tema, incluso después de cerrar el navegador, para ofrecer una experiencia de usuario más personalizada.
+
+Serás el encargado del nuevo desarrollo utilizando PHP, que implemente un mecanismo para mantener el estado de la sesión y un sistema que almacene información del cliente web, como el contenido del carrito y las preferencias de usuario, utilizando tecnologías como PHP, cookies y Web Storage.
+
+Las funcionalidades que debe presentar la aplicación web son:
+
+1.	Mantenimiento del estado de la aplicación.
+
+•	Al iniciar la sesión, el sistema debe recordar los productos que el cliente ha añadido al carrito mientras navega por distintas páginas.
+
+•	Utilizar sesiones en PHP para mantener el estado del carrito de compras.
+
+2.	Almacenamiento de preferencias del cliente en el navegador.
+
+•	El cliente debe poder seleccionar el idioma preferido y el tema de la interfaz. Estas preferencias deben persistir incluso si el usuario cierra y vuelve a abrir el navegador.
+
+•	Implementar cookies para el almacenamiento de preferencias y su posterior recuperación al cargar la página.
+
+3.	Recuperación de información en el cliente web.
+
+•	Al regresar a la página, el cliente debe poder ver sus preferencias de idioma y tema aplicadas automáticamente.
+
+•	Emplear LocalStorage para almacenar las preferencias y SessionStorage para el contenido temporal del carrito.
+
+Cuestiones a resolver 
+
+Teniendo en cuenta la situación anterior, desarrolla el código teniendo en cuenta las funcionalidades que debe tener la aplicación web.
+
+Recursos 
+
+Se deberá consultar el contenido de la unidad, internet, libros, revistas y utilizar medios informáticos para la presentación del caso práctico (Word, Power-Point…).
+
+Objetivos
+
+Conocer el proceso de implementación de mecanismos de mantenimiento de estado mediante sesiones PHP. 
+
+Saber utilizar cookies y LocalStorage para el almacenamiento de información del cliente en el navegador.
+
+Saber aplicar las preferencias almacenadas al recargar la página.
+
+Resultados de aprendizaje y criterios de evaluación 
+
+Desarrolla aplicaciones web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones.
+•	Se han identificado los mecanismos disponibles para el mantenimiento de la información que concierne a un cliente web concreto y se han señalado sus ventajas.
+•	Se han utilizado mecanismos para mantener el estado de las aplicaciones web.
+•	Se han utilizado mecanismos para almacenar información en el cliente web y para recuperar su contenido.
+
+Mantenimiento del estado de la aplicación (25%): Implemente las sesiones en PHP de manera que el sistema recuerda con precisión los productos agregados al carrito.
+Almacenimiento de preferencias del cliente (25%): Utiliza cookies para almacenar las preferencias de idioma y tema del usuario, asegurando que persisten incluso después de cerrar el navegador. Aplica Web Storage para almacenar y recuperar el contenido del carrito y las preferencias del usuario en la interfaz.
+Recuperación de información y aplicación de preferencias (30%): Aplica las preferencias almacenadas al recargar la página. Recupera la información del carrito y las preferencias, mejorando la experiencia del usuario.
+Presentación, extensión, estructura y precisión ortográfica (10%): Responde de forma ordenada, comprensible y coherente, profundizando en todos los conceptos e ideas que expresa con rigor profesional y desde un punto de vista crítico y reflexivo. No comete errores gramaticales, de ortografía o puntuación.
+Uso de recursos adicionales y creatividad en la respuesta (10%): Utiliza numerosas fuentes de información relevantes, fiables y actualizadas. Aporta recursos adicionales que clarifican la respuesta. Responde con gran originalidad, haciendo uso de diferentes herramientas y aplicaciones, y expresando ideas ingeniosas.
