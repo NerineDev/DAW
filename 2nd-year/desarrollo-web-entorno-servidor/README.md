@@ -11,13 +11,15 @@ It introduces technologies like **PHP**, **Node.js**, and **SQL**, and explores 
 
 | Unit | Topic / Tema | Status |
 |:--|:--|:--|
-| **UD1** | Introduction to server-side programming | ✅ |
-| **UD2** | PHP basics: syntax, forms, and superglobals | ✅ |
-| **UD3** | File handling and sessions | ✅ |
-| **UD4** | Databases and CRUD operations (MySQL / PDO) | ✅ |
-| **UD5** | Authentication and security | 🚧 In progress |
-| **UD6** | APIs and backend frameworks (Node.js / Express intro) | 🚧 Planned |
-| **UD7** | Final project: full server-side web app | 🚧 Planned |
+| **UD1** | Selección de arquitecturas y herramientas de programación | ✅ |
+| **UD2** | Inserción de código en páginas web | ✅ |
+| **UD3** | Programación basada en lenguajes de marcas con código embebido | ✅ |
+| **UD4** | Desarrollo de aplicaciones web utilizando código embebido | ✅ |
+| **UD5** | Generación dinámica de páginas web | ✅ |
+| **UD6** | Utilización de técnnicas de acceso a datos | ✅ |
+| **UD7** | programación de servicios web | ✅ |
+| **UD8** | Utilización dinámica de páginas web interactivas | ✅ |
+| **UD9** | Desarrollo de aplicaciones web híbridas | 🚧 Planned |
 
 ---
 
