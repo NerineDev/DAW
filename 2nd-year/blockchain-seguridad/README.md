@@ -18,9 +18,9 @@ It combines theoretical foundations (cryptography, digital signatures, hashing) 
 | **UD5** | MECANISMOS DE CONSENSO | ✅ |
 | **UD6** | MINEROS Y POOL DE MINERÍA | ✅ |
 | **UD7** | SMART CONTRACT ETHEREUM | ❌ sin tarea|
-| **UD8** | MINEROS Y POOL DE MINERÍA | ✅ |
-| **UD9** | MINEROS Y POOL DE MINERÍA | 🚧 Planned |
-| **UD10** | MINEROS Y POOL DE MINERÍA | 🚧 Planned |
+| **UD8** | HYPERLEDGER | ✅ |
+| **UD9** | HERRAMIENTAS | 🚧 Planned |
+| **UD10** | CASOS DE USOS REALES | 🚧 Planned |
 
 ---
 
