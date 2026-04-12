@@ -10,11 +10,12 @@ It covers local and cloud hosting, domain setup, server configuration, version c
 
 | Unit | Topic / Tema | Status |
 |:--|:--|:--|
-| **UD1** | Installing and configuring a web server (Apache / Nginx) | ✅ |
-| **UD2** | Domain names, DNS, and hosting services | ✅ |
-| **UD3** | Deploying dynamic web applications (PHP, Node.js) | ✅ |
-| **UD4** | Version control and collaborative deployment (Git / GitHub) | 🚧 In progress |
-| **UD5** | Backup, automation, and security practices | 🚧 In progress |
+| **UD1** | Implantación de arquitecturas web | ✅ |
+| **UD2** | Administración de servidores web | ✅ |
+| **UD3** | Administración de servidores de aplicaciones | ✅ |
+| **UD4** | Instalación y administración de servidores de transferencia de archivos | ✅ |
+| **UD5** | Servicios de red implicados en el despliegue de una aplicación web | ✅ |
+| **UD6** | Documentación, sistema de control de versiones y de integración contínua | 🚧 In progress |
 
 ---
 
