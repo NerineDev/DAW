@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Team - Tienda Tecnología</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="IMG/logo.png" alt="Best Team Logo">
+        </div>
+        <nav>
+            <ul class="menu_principal">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <!-- El contador de favoritos se inserta aquí vía JavaScript -->
+        <div id="header-fav"></div>
+    </header>
+
+    <main>
+        <h1>Productos Destacados</h1>
+
+        <!--
+            Punto de inserción para los controles generados dinámicamente por JS:
+            - campo de búsqueda en tiempo real
+            - selector de categorías
+            - botón "Mostrar Favoritos"
+        -->
+        <div id="controles"></div>
+
+        <!-- Lista de productos estáticos en el HTML -->
+        <div id="productos">
+
+            <div class="producto" data-id="1" data-categoria="Periféricos" data-nombre="Teclado Mecánico RGB">
+                <img src="IMG/teclado.jpg" alt="Teclado Mecánico RGB" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Periféricos</span>
+                    <strong class="producto-nombre">Teclado Mecánico RGB</strong>
+                    <p class="producto-descripcion">Switches Cherry MX Red, retroiluminación RGB personalizable, disposición española.</p>
+                    <span class="producto-precio">89,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="2" data-categoria="Pantallas" data-nombre="Monitor 4K 27 &quot;">
+                <img src="IMG/monitor27.jpg" alt="Monitor 4K 27 &quot;" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Pantallas</span>
+                    <strong class="producto-nombre">Monitor 4K 27"</strong>
+                    <p class="producto-descripcion">Panel IPS 4K UHD, 144 Hz, HDR400, ideal para trabajo y gaming.</p>
+                    <span class="producto-precio">249,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="3" data-categoria="Audio" data-nombre="Auriculares Gaming Pro">
+                <img src="IMG/auriculares.jpg" alt="Auriculares Gaming Pro" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Audio</span>
+                    <strong class="producto-nombre">Auriculares Gaming Pro</strong>
+                    <p class="producto-descripcion">Sonido envolvente 7.1 virtual, micrófono retráctil, compatibles con PC y consola.</p>
+                    <span class="producto-precio">59,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="4" data-categoria="Periféricos" data-nombre="Ratón Inalámbrico Pro">
+                <img src="IMG/raton.jpg" alt="Ratón Inalámbrico Pro" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Periféricos</span>
+                    <strong class="producto-nombre">Ratón Inalámbrico Pro</strong>
+                    <p class="producto-descripcion">Sensor óptico 16.000 DPI, batería de 70 horas, receptor USB Nano.</p>
+                    <span class="producto-precio">44,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="5" data-categoria="Audio" data-nombre="Altavoces Bluetooth 2.1">
+                <img src="IMG/altavoces.jpg" alt="Altavoces Bluetooth 2.1" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Audio</span>
+                    <strong class="producto-nombre">Altavoces Bluetooth 2.1</strong>
+                    <p class="producto-descripcion">60 W RMS, subwoofer integrado, conexión Bluetooth 5.0 y AUX.</p>
+                    <span class="producto-precio">79,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="6" data-categoria="Accesorios" data-nombre="Hub USB-C 7 Puertos">
+                <img src="IMG/hub.jpg" alt="Hub USB-C 7 Puertos" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Accesorios</span>
+                    <strong class="producto-nombre">Hub USB-C 7 Puertos</strong>
+                    <p class="producto-descripcion">Compatible con smartphones y tablets, carga rápida 65 W, HDMI 4K.</p>
+                    <span class="producto-precio">29,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="7" data-categoria="Móviles" data-nombre="Xiaomi Redmi Note 13">
+                <img src="IMG/xiaomi-redmi-note-13.jpg" alt="Xiaomi Redmi Note 13" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Móviles</span>
+                    <strong class="producto-nombre">Xiaomi Redmi Note 13</strong>
+                    <p class="producto-descripcion">Pantalla AMOLED 6,67", cámara 108 MP, batería 5000 mAh, carga 33 W.</p>
+                    <span class="producto-precio">199,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="8" data-categoria="Móviles" data-nombre="iPhone 15 Pro">
+                <img src="IMG/iphone-15-pro.jpg" alt="iPhone 15 Pro" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Móviles</span>
+                    <strong class="producto-nombre">iPhone 15 Pro</strong>
+                    <p class="producto-descripcion">Chip A17 Pro, Dynamic Island, cámara de 48 MP, titanio y USB-C.</p>
+                    <span class="producto-precio">1.099,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="9" data-categoria="Tablets" data-nombre="Samsung Galaxy Tab A9">
+                <img src="IMG/samsung-galaxy-tab-a9.jpg" alt="Samsung Galaxy Tab A9" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Tablets</span>
+                    <strong class="producto-nombre">Samsung Galaxy Tab A9</strong>
+                    <p class="producto-descripcion">Pantalla LCD 8,7", 4 GB RAM, Android 13, batería de 5100 mAh.</p>
+                    <span class="producto-precio">179,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="10" data-categoria="Tablets" data-nombre="iPad Air M2">
+                <img src="IMG/ipad-air-m2.jpg" alt="iPad Air M2" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Tablets</span>
+                    <strong class="producto-nombre">iPad Air M2</strong>
+                    <p class="producto-descripcion">Chip Apple M2, pantalla Liquid Retina 11", compatible con Apple Pencil Pro.</p>
+                    <span class="producto-precio">749,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="11" data-categoria="Tablets" data-nombre="Huawei MatePad 11">
+                <img src="IMG/huawei-matepad-11.jpg" alt="Huawei MatePad 11" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Tablets</span>
+                    <strong class="producto-nombre">Huawei MatePad 11</strong>
+                    <p class="producto-descripcion">Pantalla IPS 10,95" 120 Hz, procesador Snapdragon 865, HarmonyOS 3.</p>
+                    <span class="producto-precio">349,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+            <div class="producto" data-id="12" data-categoria="Accesorios" data-nombre="Soporte para Monitor">
+                <img src="IMG/soporte.jpg" alt="Soporte para Monitor" onerror="this.style.display='none'">
+                <div class="producto-info">
+                    <span class="producto-categoria">Accesorios</span>
+                    <strong class="producto-nombre">Soporte para Monitor</strong>
+                    <p class="producto-descripcion">Brazo articulado con altura ajustable, compatible con VESA 75 y 100.</p>
+                    <span class="producto-precio">34,99 €</span>
+                </div>
+                <button class="btn-fav" type="button">Añadir a Favoritos</button>
+            </div>
+
+        </div><!-- #productos -->
+    </main>
+
+    <footer>
+        <div class="datos_contacto">
+            <h3>Contacto</h3>
+            <p>Calle Tecnología 42, Madrid · info@bestteam.es</p>
+        </div>
+        <div class="redes_sociales">
+            <a href="https://facebook.com" target="_blank"><img src="IMG/facebook.png" class="red-social" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="IMG/instagram.png" class="red-social" alt="Instagram"></a>
+            <a href="https://x.com" target="_blank"><img src="IMG/x.png" class="red-social" alt="X"></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+    <!--
+    =====================================================================
+    PRUEBAS Y VALIDACIÓN DEL CÓDIGO
+    =====================================================================
+
+    Las siguientes pruebas verifican que todas las funcionalidades
+    responden correctamente. Para replicarlas, abrir index.html en el
+    navegador y seguir cada paso.
+
+    PRUEBA 1 – Contador de favoritos: añadir
+      Pasos:    Hacer clic en "Añadir a Favoritos" en cualquier producto.
+      Esperado: El contador del encabezado pasa de 0 a 1. El botón cambia
+                a "❤️ En Favoritos" y la tarjeta obtiene un borde rojo.
+      Resultado: ✔ Correcto.
+
+    PRUEBA 2 – Contador de favoritos: eliminar
+      Pasos:    Con al menos un favorito marcado, volver a hacer clic en
+                el mismo botón "❤️ En Favoritos".
+      Esperado: El contador disminuye en 1. El botón recupera el texto
+                "Añadir a Favoritos" y desaparece el borde rojo.
+      Resultado: ✔ Correcto.
+
+    PRUEBA 3 – Filtro por categoría
+      Pasos:    Seleccionar "Tablets" en el desplegable de categoría.
+      Esperado: Solo se muestran los productos cuya categoría sea Tablets
+                (Samsung Galaxy Tab A9, iPad Air M2, Huawei MatePad 11).
+                El resto queda oculto.
+      Resultado: ✔ Correcto.
+
+    PRUEBA 4 – Búsqueda en tiempo real
+      Pasos:    Escribir "iphone" en el campo de búsqueda.
+      Esperado: Solo el iPhone 15 Pro permanece visible. Al borrar el
+                texto, todos los productos vuelven a aparecer.
+      Resultado: ✔ Correcto.
+
+    PRUEBA 5 – Filtros combinados
+      Pasos:    Seleccionar "Móviles" y escribir "xiaomi".
+      Esperado: Solo el Xiaomi Redmi Note 13 es visible (cumple ambos
+                criterios: categoría Móviles y nombre contiene "xiaomi").
+      Resultado: ✔ Correcto.
+
+    PRUEBA 6 – Mostrar Favoritos
+      Pasos:    Marcar 2 productos como favoritos y pulsar "Mostrar
+                Favoritos".
+      Esperado: Solo los 2 productos marcados son visibles. El botón
+                cambia a "Mostrar Todos". Al pulsarlo de nuevo, se
+                restaura la vista completa.
+      Resultado: ✔ Correcto.
+
+    PRUEBA 7 – Mensaje sin resultados
+      Pasos:    Escribir una cadena inexistente, p. ej. "zzzzz".
+      Esperado: Todos los productos se ocultan y aparece el mensaje
+                "No hay productos que coincidan con tu búsqueda."
+      Resultado: ✔ Correcto.
+
+    =====================================================================
+    -->
+</body>
+</html>
