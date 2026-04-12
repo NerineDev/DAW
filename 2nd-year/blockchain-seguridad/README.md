@@ -11,12 +11,16 @@ It combines theoretical foundations (cryptography, digital signatures, hashing) 
 
 | Unit | Topic / Tema | Status |
 |:--|:--|:--|
-| **UD1** | Fundamentals of web security and vulnerabilities (OWASP) | ✅ |
-| **UD2** | Cryptography basics: hashing, encryption, digital signatures | ✅ |
-| **UD3** | Authentication, sessions, and secure data handling | ✅ |
-| **UD4** | Introduction to blockchain and smart contracts | ✅ |
-| **UD5** | Decentralized applications and Web3 | ✅ |
-| **UD6** | Secure API design and deployment best practices | 🚧 Planned |
+| **UD1** | BLOCKCHAIN - INTRODUCCIÓN | ✅ |
+| **UD2** | BITCOIN | ✅ |
+| **UD3** | ETHEREUM | ✅ |
+| **UD4** | PRINCIPALES DIFERENCIAS | ✅ |
+| **UD5** | MECANISMOS DE CONSENSO | ✅ |
+| **UD6** | MINEROS Y POOL DE MINERÍA | ✅ |
+| **UD7** | SMART CONTRACT ETHEREUM | ❌ sin tarea|
+| **UD8** | MINEROS Y POOL DE MINERÍA | ✅ |
+| **UD9** | MINEROS Y POOL DE MINERÍA | 🚧 Planned |
+| **UD10** | MINEROS Y POOL DE MINERÍA | 🚧 Planned |
 
 ---
 
