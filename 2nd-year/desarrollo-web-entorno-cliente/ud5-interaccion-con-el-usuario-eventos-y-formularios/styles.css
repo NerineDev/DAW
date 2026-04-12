@@ -1,0 +1,227 @@
+:root {
+    --color-1: #ede0d4;
+    --color-2: #e6ccb2;
+    --color-3: #ddb892;
+    --color-4: #b08968;
+    --color-5: #7f5539;
+    --color-6: #9c6644;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, var(--color-1) 0%, var(--color-2) 100%);
+    color: var(--color-5);
+}
+
+header {
+    background: transparent;
+    color: var(--color-5);
+    padding: 2.3em 0 1.2em 0;
+    text-align: center;
+}
+
+.cabecera-marca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35em;
+}
+
+.logo {
+    height: 62px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+h1 {
+    margin: 0;
+    color: var(--color-6);
+    font-weight: 700;
+}
+
+main {
+    max-width: 600px;
+    margin: 3em auto;
+    background: #f7f1ec;
+    padding: 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 10px 22px rgba(127, 85, 57, 0.14);
+    border: 1px solid var(--color-2);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    color: var(--color-6);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.fila1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+}
+
+.fila2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.fila2 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+input {
+    padding: 0.75em 1.2em;
+    border: 1px solid var(--color-3);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--color-5);
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px rgba(127, 85, 57, 0.08);
+}
+
+select {
+    padding: 0.75em 1em;
+    border: 1px solid var(--color-3);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--color-5);
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px rgba(127, 85, 57, 0.08);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-4);
+    box-shadow: 0 0 0 3px rgba(176, 137, 104, 0.2);
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--color-4);
+    box-shadow: 0 0 0 3px rgba(176, 137, 104, 0.2);
+}
+
+label {
+    color: var(--color-6);
+    font-weight: 600;
+}
+
+.campo-pass {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.campo-telefono {
+    display: grid;
+    grid-template-columns: minmax(170px, auto) 1fr;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.ojo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    color: var(--color-6);
+    gap: 0.3em;
+}
+
+.ojo input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    box-shadow: none;
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 2em auto 0 auto;
+    min-width: 260px;
+    padding: 0.9em 2.5em;
+    background: var(--color-6);
+    color: var(--color-1);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(127, 85, 57, 0.2);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background: var(--color-5);
+    box-shadow: 0 6px 14px rgba(127, 85, 57, 0.25);
+}
+
+.error {
+    color: var(--color-6);
+    margin-top: 0.25em;
+    min-height: 1.1em;
+    font-size: 0.9em;
+}
+
+.entrada-error {
+    border: 2px solid var(--color-6);
+    background-color: #f6e9df;
+}
+
+.entrada-enfocada {
+    border: 2px solid var(--color-4);
+}
+
+.mensaje-formulario {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    min-height: 1.1em;
+}
+
+.mensaje-exito {
+    color: var(--color-5);
+}
+
+.mensaje-error {
+    color: var(--color-6);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background: transparent;
+    color: var(--color-6);
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+    }
+
+    .fila2 {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-telefono {
+        grid-template-columns: 1fr;
+    }
+}

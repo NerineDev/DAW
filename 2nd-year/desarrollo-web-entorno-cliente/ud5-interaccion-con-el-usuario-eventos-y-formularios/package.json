@@ -1,0 +1,14 @@
+{
+  "name": "ud5-validacion-formularios",
+  "version": "1.0.0",
+  "description": "Caso práctico UD5 - validación de formularios con JavaScript, JSDoc y Jest",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "docs": "jsdoc validadores.js script.js -d docs"
+  },
+  "devDependencies": {
+    "jest": "^30.1.0",
+    "jsdoc": "^4.0.4"
+  }
+}

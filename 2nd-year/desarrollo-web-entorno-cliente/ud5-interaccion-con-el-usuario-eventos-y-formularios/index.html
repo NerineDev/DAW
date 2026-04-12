@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a cursos online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera-marca">
+            <a href="index.html" aria-label="Inicio">
+                <img src="img/5.png" class="logo" alt="Logo del proyecto">
+            </a>
+            <h1>Inscripción a cursos online</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Formulario de registro</h2>
+        <form id="formulario-registro" method="post">
+            <div class="fila1">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Inserta tu nombre de usuario" required>
+                <span id="error-usuario" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="fila2">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Inserta tu nombre" required>
+                    <span id="error-nombre" class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Inserta tu apellido" required>
+                    <span id="error-apellido" class="error" aria-live="polite"></span>
+                </div>
+            </div>
+
+            <div class="fila1">
+                <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                <span id="error-fecha-nacimiento" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="fila1">
+                <label for="telefono">Teléfono internacional</label>
+                <div class="campo-telefono">
+                    <select id="codigo-pais" name="codigo-pais" aria-label="Código de país">
+                        <option value="" selected>Seleccione código telefónico</option>
+                        <option value="+34">+34 (España)</option>
+                        <option value="+49">+49 (Alemania)</option>
+                        <option value="+54">+54 (Argentina)</option>
+                        <option value="+43">+43 (Austria)</option>  
+                        <option value="+61">+61 (Australia)</option>
+                        <option value="+32">+32 (Bélgica)</option>
+                        <option value="+55">+55 (Brasil)</option>
+                        <option value="+56">+56 (Chile)</option>
+                        <option value="+86">+86 (China)</option>
+                        <option value="+57">+57 (Colombia)</option>
+                        <option value="+82">+82 (Corea del Sur)</option>
+                        <option value="+45">+45 (Dinamarca)</option>
+                        <option value="+593">+593 (Ecuador)</option>
+                        <option value="+20">+20 (Egipto)</option>
+                        <option value="+1">+1 (EE. UU. / Canadá / Rep. Dominicana)</option>
+                        <option value="+421">+421 (Eslovaquia)</option>
+                        <option value="+372">+372 (Estonia)</option>
+                        <option value="+33">+33 (Francia)</option>
+                        <option value="+358">+358 (Finlandia)</option>
+                        <option value="+30">+30 (Grecia)</option>
+                        <option value="+502">+502 (Guatemala)</option>
+                        <option value="+504">+504 (Honduras)</option>
+                        <option value="+36">+36 (Hungría)</option>
+                        <option value="+91">+91 (India)</option>
+                        <option value="+353">+353 (Irlanda)</option>
+                        <option value="+354">+354 (Islandia)</option>
+                        <option value="+39">+39 (Italia)</option>
+                        <option value="+81">+81 (Japón)</option>
+                        <option value="+371">+371 (Letonia)</option>
+                        <option value="+423">+423 (Liechtenstein)</option>
+                        <option value="+370">+370 (Lituania)</option>
+                        <option value="+352">+352 (Luxemburgo)</option>
+                        <option value="+212">+212 (Marruecos)</option>
+                        <option value="+52">+52 (México)</option>
+                        <option value="+377">+377 (Mónaco)</option>
+                        <option value="+47">+47 (Noruega)</option> 
+                        <option value="+64">+64 (Nueva Zelanda)</option>
+                        <option value="+31">+31 (Países Bajos)</option>
+                        <option value="+507">+507 (Panamá)</option>
+                        <option value="+51">+51 (Perú)</option>
+                        <option value="+48">+48 (Polonia)</option>
+                        <option value="+351">+351 (Portugal)</option>
+                        <option value="+44">+44 (Reino Unido)</option>
+                        <option value="+420">+420 (República Checa)</option>
+                        <option value="+7">+7 (Rusia)</option>
+                        <option value="+40">+40 (Rumanía)</option>
+                        <option value="+381">+381 (Serbia)</option>
+                        <option value="+46">+46 (Suecia)</option>
+                        <option value="+41">+41 (Suiza)</option> 
+                        <option value="+66">+66 (Tailandia)</option>
+                        <option value="+90">+90 (Turquía)</option>
+                        <option value="+380">+380 (Ucrania)</option>
+                        <option value="+598">+598 (Uruguay)</option>
+                        <option value="+58">+58 (Venezuela)</option>    
+                        <option value="+84">+84 (Vietnam)</option>
+                    </select>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Inserta número de teléfono" required>
+                </div>
+                <span id="error-telefono" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="fila2">
+                <div>
+                    <label for="contrasena">Contraseña</label>
+                    <div class="campo-pass">
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            placeholder="Mínimo 8 caracteres"
+                            minlength="8"
+                            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}"
+                            title="La contraseña debe tener al menos 8 caracteres e incluir una letra minúscula, una mayúscula, un número y un carácter especial."
+                            required
+                        >
+                        <label class="ojo" for="ver-contrasena" aria-label="Mostrar u ocultar contraseña">
+                            <input type="checkbox" id="ver-contrasena">
+                            👁️
+                        </label>
+                    </div>
+                    <span id="error-contrasena" class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="contrasena2">Repite la contraseña</label>
+                    <div class="campo-pass">
+                        <input
+                            type="password"
+                            id="contrasena2"
+                            name="contrasena2"
+                            placeholder="Repite tu contraseña"
+                            required
+                        >
+                        <label class="ojo" for="ver-contrasena2" aria-label="Mostrar u ocultar repetición de contraseña">
+                            <input type="checkbox" id="ver-contrasena2">
+                            👁️
+                        </label>
+                    </div>
+                    <span id="error-contrasena2" class="error" aria-live="polite"></span>
+                </div>
+            </div>
+
+            <div class="fila1">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="nombre@dominio.com" required>
+                <span id="error-email" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="fila1">
+                <label for="email2">Repite el correo electrónico</label>
+                <input type="email" id="email2" name="email2" placeholder="Repite tu correo electrónico" required>
+                <span id="error-email2" class="error" aria-live="polite"></span>
+            </div>
+
+            <button type="submit">Inscribirse</button>
+            <p id="mensaje-formulario" class="mensaje-formulario" aria-live="polite"></p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Ana Vertedor</p>
+    </footer>
+    <script src="validadores.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
