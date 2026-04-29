@@ -13,10 +13,16 @@ Students design, develop, and document a complete **full-stack web application**
 |:--|:--|:--|
 | **Phase 1** | Project proposal and planning | ✅ |
 | **Phase 2** | Technical documentation (functional & technical design) | ✅ |
-| **Phase 3** | Database structure and initial backend setup | 🚧 In progress |
+| **Phase 3** | Database structure and initial backend setup | ✅ |
 | **Phase 4** | Frontend development and integration | ✅ |
-| **Phase 5** | Deployment, testing, and optimization | 🚧 Planned |
+| **Phase 5** | Deployment, testing, and optimization | ✅ |
 | **Phase 6** | Presentation and final defense | 🚧 Planned |
+
+## Project documentation Git
+Full project diagrams & documentation [here](https://github.com/NerineDev/pi-plataforma-citas-docs)
+
+## Deployment
+Demo deployment here (pending link)
 
 ---
 
