@@ -15,7 +15,7 @@ It covers local and cloud hosting, domain setup, server configuration, version c
 | **UD3** | Administración de servidores de aplicaciones | ✅ |
 | **UD4** | Instalación y administración de servidores de transferencia de archivos | ✅ |
 | **UD5** | Servicios de red implicados en el despliegue de una aplicación web | ✅ |
-| **UD6** | Documentación, sistema de control de versiones y de integración contínua | 🚧 In progress |
+| **UD6** | Documentación, sistema de control de versiones y de integración contínua | ✅ |
 
 ---
 
