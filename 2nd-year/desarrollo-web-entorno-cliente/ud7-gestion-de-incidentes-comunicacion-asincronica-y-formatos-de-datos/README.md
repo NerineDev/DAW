@@ -117,11 +117,11 @@ Recommended option:
 
 *Opción recomendada:*
 
-*1. Abrir la carpeta del proyecto en Visual Studio Code.*
-*2. Instalar o activar la extensión Live Server.*
-*3. Hacer clic derecho sobre `index.html`.*
-*4. Seleccionar **Open with Live Server**.*
-*5. Para ejecutar las pruebas, abrir `tests/tests.html` con Live Server.*
+1. *Abrir la carpeta del proyecto en Visual Studio Code.*
+2. *Instalar o activar la extensión Live Server.*
+3. *Hacer clic derecho sobre `index.html`.*
+4. *Seleccionar **Open with Live Server**.*
+5. *Para ejecutar las pruebas, abrir `tests/tests.html` con Live Server.*
 
 ---
 
