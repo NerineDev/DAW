@@ -39,7 +39,7 @@ The project focuses on asynchronous communication, DOM manipulation, data format
 ```text
 UD7_DWEC/
 ├── README.md
-├── documentacion.md (Spanish)
+├── documentacion.md (Español)
 ├── documentation.mc (English)
 ├── index.html
 ├── css/
