@@ -71,8 +71,10 @@ h2 {
 
 .dashboard {
   display: grid;
-  grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
+  grid-template-columns: minmax(320px, 420px) minmax(520px, 1fr);
   gap: 1.5rem;
+  width: min(100%, 1180px);
+  margin: 0 auto;
   padding: 1.5rem clamp(1rem, 4vw, 3rem);
 }
 
@@ -240,6 +242,7 @@ button:hover {
 
   .dashboard {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .connection-status {
@@ -247,3 +250,4 @@ button:hover {
     white-space: normal;
   }
 }
+
