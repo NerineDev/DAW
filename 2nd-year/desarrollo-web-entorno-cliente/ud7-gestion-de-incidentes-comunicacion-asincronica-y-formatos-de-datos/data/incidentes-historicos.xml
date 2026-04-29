@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidentes>
+  <incidente>
+    <id>hist-001</id>
+    <titulo>Corte eléctrico en hospital</titulo>
+    <ubicacion>Hospital Central</ubicacion>
+    <prioridad>alta</prioridad>
+    <estado>resuelto</estado>
+    <descripcion>El suministro principal se recuperó tras activar el grupo electrógeno.</descripcion>
+    <fecha>2026-04-28T10:30:00</fecha>
+  </incidente>
+  <incidente>
+    <id>hist-002</id>
+    <titulo>Accidente de tráfico múltiple</titulo>
+    <ubicacion>A-92, salida 14</ubicacion>
+    <prioridad>media</prioridad>
+    <estado>activo</estado>
+    <descripcion>Intervienen policía local, bomberos y dos ambulancias.</descripcion>
+    <fecha>2026-04-28T18:45:00</fecha>
+  </incidente>
+</incidentes>

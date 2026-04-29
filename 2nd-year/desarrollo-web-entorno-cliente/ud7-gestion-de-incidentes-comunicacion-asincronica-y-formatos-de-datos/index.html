@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de incidentes en tiempo real</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <!-- Cabecera principal con el contexto operativo de la aplicación. -->
+    <div>
+      <p class="eyebrow">Centro de emergencias</p>
+      <h1>Gestión de incidentes</h1>
+    </div>
+    <p id="connectionStatus" class="connection-status">Modo simulación WebSocket</p>
+  </header>
+
+  <main class="dashboard">
+    <section class="panel incident-form-panel" aria-labelledby="formTitle">
+      <h2 id="formTitle">Registrar nuevo incidente</h2>
+
+      <!-- Formulario semántico para capturar y enviar incidentes en formato JSON. -->
+      <form id="incidentForm" class="incident-form">
+        <label for="title">Título</label>
+        <input id="title" name="title" type="text" placeholder="Ej. Incendio en nave industrial" required>
+
+        <label for="location">Ubicación</label>
+        <input id="location" name="location" type="text" placeholder="Ej. Polígono Norte, Sevilla" required>
+
+        <label for="priority">Prioridad</label>
+        <select id="priority" name="priority" required>
+          <option value="alta">Alta</option>
+          <option value="media" selected>Media</option>
+          <option value="baja">Baja</option>
+        </select>
+
+        <label for="description">Descripción</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe brevemente la situación"></textarea>
+
+        <button type="submit">Enviar incidente</button>
+      </form>
+    </section>
+
+    <section class="panel incident-list-panel" aria-labelledby="listTitle">
+      <div class="panel-heading">
+        <div>
+          <h2 id="listTitle">Incidentes en tiempo real</h2>
+          <p>La lista se actualiza automáticamente al recibir eventos.</p>
+        </div>
+        <button id="loadHistoryButton" type="button" class="secondary-button">Cargar histórico</button>
+      </div>
+
+      <!-- Contenedor actualizado dinámicamente desde JavaScript. -->
+      <ul id="incidentList" class="incident-list" aria-live="polite"></ul>
+    </section>
+  </main>
+</body>
+</html>
